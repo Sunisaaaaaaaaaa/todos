@@ -8,7 +8,7 @@ const AuthForm = (props) => {
       <input name='email' placeholder='email' />
       <input name='password' placeholder='password' type='password' />
       <button className='btn-add-todo' type='submit'>
-        register
+        {props.isRegister ? 'register' : 'login'}
       </button>
     </form>
   )

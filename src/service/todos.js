@@ -1,12 +1,12 @@
-import axios from "axios"
+import axios from 'axios'
 
 export async function getTodo() {
-  const res = await axios.get("http://localhost:4000/todos")
+  const res = await axios.get('http://localhost:4000/todos')
   return res.data
 }
 
 export async function addTodo(todo) {
-  const res = await axios.post("http://localhost:4000/todos", todo)
+  const res = await axios.post('http://localhost:4000/todos', todo)
   return res.data
 }
 
